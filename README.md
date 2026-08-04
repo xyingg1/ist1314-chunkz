@@ -7,7 +7,6 @@ per product category, and compares a distributed Apache Spark implementation
 against a single-machine Pandas implementation in terms of performance, 
 scalability, and code complexity.
 
-
 ## Dataset
 Brazilian E-Commerce Public Dataset by Olist (Kaggle):
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
@@ -29,14 +28,9 @@ under `data/`:
    button; manually upload the 4 CSVs from `data/` in this repo (or your own 
    local copies) when prompted
 3. Run the remaining cells in order
-4. Results download automatically at the end (`pandas_results.json`, aggregation CSV)
    
 ### Spark (AWS EMR)
 1. Open `scripts/spark_pipeline_glue.ipynb` in AWS Glue Notebook.
 2. Upload the dataset files into your Amazon S3 bucket and update the S3 path inside the notebook.
 3. Run all cells in order. The notebook will execute the Spark pipeline, including data cleaning, joining, aggregation, and machine learning.
-4. Results will be automatically generated:
-   - Spark execution time results
-   - Aggregation output
-   - Logistic Regression evaluation results
 
