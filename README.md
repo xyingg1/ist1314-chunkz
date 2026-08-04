@@ -29,7 +29,7 @@ under `data/`:
    local copies) when prompted
 3. Run the remaining cells in order
    
-### Spark (AWS EMR)
+### Spark 
 1. Open `scripts/spark_pipeline_glue.ipynb` in AWS Glue Notebook.
 2. Upload the dataset files into your Amazon S3 bucket and update the S3 path inside the notebook.
 3. Run all cells in order. The notebook will execute the Spark pipeline, including data cleaning, joining, aggregation, and machine learning.
